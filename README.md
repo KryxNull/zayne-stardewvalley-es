@@ -43,4 +43,5 @@ A diferencia de una traducción estándar, este proyecto requirió:
 
 ---
 *"Comprometido con la calidad técnica y la fidelidad narrativa."* 
+<br>
 **Creado por HissyKryx**
