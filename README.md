@@ -37,8 +37,8 @@ A diferencia de una traducción estándar, este proyecto requirió:
 
 ## 🚀 Instalación
 1. Descarga el archivo.
-2. Pégalo en tu carpeta de `Mods`.
-3. Reemplaza los archivos si es necesario.
+2. Pégalo en tu carpeta de `Mods`, donde ya tienes el [mod original](https://www.nexusmods.com/stardewvalley/mods/40300?tab=description) de [MoLiNaiLvMianMianBing](https://www.nexusmods.com/profile/MoLiNaiLvMianMianBing?gameId=1303)
+3. Reemplaza los archivos
 4. ¡Disfruta!
 
 ---
