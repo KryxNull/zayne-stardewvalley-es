@@ -24,7 +24,7 @@ Bienvenido al repositorio oficial de la traducción al español para el mod **Za
 
 | Dato | Detalle |
 | :--- | :--- |
-| **Mod Original** | [Nombre del Autor] (Compatible) |
+| **Mod Original** | v3.6.0 (Compatible) |
 | **Traducción** | v1.0 (Sincronizada) |
 | **Progreso** | 100% Completado |
 | **Intervención** | Bug Fixing & UX Adaptation |
