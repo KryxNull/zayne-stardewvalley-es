@@ -9,15 +9,15 @@ Bienvenido al repositorio oficial de la traducción al español para el mod **Za
 <div align="center">
   <img src="https://github.com/user-attachments/assets/b9be4b20-62e9-4954-abb7-39d249b62284" width="30%" />
   
-  <img src="https://github.com/user-attachments/assets/1b19932f-5003-48b7-902d-8bb97fa2a92e" width="30%" />
+  <img src="https://github.com/user-attachments/assets/c5f94238-f535-4902-acb4-eed6e99c766e" width="30%" />
   
-  <img src="https://github.com/user-attachments/assets/5d14aa35-988a-4d7e-af0e-fd9066f6f252" width="30%" />
+  <img src="https://github.com/user-attachments/assets/a505f8bf-14f6-48c5-a0d5-4ab3c26a4790" width="30%" />
+
+  <img src="https://github.com/user-attachments/assets/61d544f8-4c9a-41af-8e2c-0ea5aee29aa8" width="30%" />
   
-  <img src="https://github.com/user-attachments/assets/891e5f39-625e-4335-b95b-54402b7496b3" width="30%" />
+  <img src="https://github.com/user-attachments/assets/e5d614f3-4896-4e74-be8a-39e25408ea3e" width="30%" />
   
-  <img src="https://github.com/user-attachments/assets/5b506e4b-8407-48a0-87f3-203d96eeace7" width="30%" />
-  
-  <img src="https://github.com/user-attachments/assets/a6bd0fb1-b685-4233-8a48-4c4d12a8c1ea" width="30%" />
+  <img src="https://github.com/user-attachments/assets/def70eba-9265-4cd4-a67b-888ffbb73367" width="30%" />
 </div>
 
 ## ℹ️ Información Técnica
