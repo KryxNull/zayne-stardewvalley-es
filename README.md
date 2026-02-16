@@ -6,7 +6,7 @@
 Bienvenido al repositorio oficial de la traducción al español para el mod **Zayne (Love and Deepspace)** de Stardew Valley. Este proyecto incluye correcciones técnicas para asegurar la mejor experiencia posible.
 
 ## 📸 Capturas
-![Captura 1](PON_AQUI_EL_LINK_DE_TU_CAPTURA)
+![Captura 1](<img width="1920" height="1007" alt="2026-02-15_21-39" src="https://github.com/user-attachments/assets/bd21a717-24bf-48a5-baee-6d2e426ce614" />)
 
 ## ℹ️ Información Técnica
 
