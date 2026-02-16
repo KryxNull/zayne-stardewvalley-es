@@ -1,2 +1,32 @@
-# zayne-stardewvalley-es
-"Spanish translation and technical bug fixing for the Zayne NPC mod in Stardew Valley."
+# 🧊 Love and Deepspace: Zayne - Traducción al Español
+
+![Banner de Zayne](PON_AQUI_EL_LINK_DE_TU_IMAGEN)
+
+Bienvenido al repositorio oficial de la traducción al español para el mod **Zayne (Love and Deepspace)** de Stardew Valley. Este proyecto incluye correcciones técnicas para asegurar la mejor experiencia posible.
+
+## 📸 Capturas
+![Captura 1](PON_AQUI_EL_LINK_DE_TU_CAPTURA)
+
+## ℹ️ Información Técnica
+
+| Dato | Detalle |
+| :--- | :--- |
+| **Mod Original** | [Nombre del Autor] (Compatible) |
+| **Traducción** | v1.0 (Sincronizada) |
+| **Progreso** | 100% Completado |
+| **Intervención** | Bug Fixing & UX Adaptation |
+
+## 🛠️ Detalles de la Localización
+A diferencia de una traducción estándar, este proyecto requirió:
+* **Logic Bug Fix:** Corrección de scripts para activar el *trigger* del evento de introducción del NPC que estaba bugeado en el mod original.
+* **Gestión de Sintaxis:** Edición directa en scripts de eventos para evitar *crashes* y mantener la integridad del código.
+* **Adaptación de Género:** Implementación de variables dinámicas para permitir el acceso a los eventos de afinidad a todos los jugadores.
+
+## 🚀 Instalación
+1. Descarga el archivo.
+2. Pégalo en tu carpeta de `Mods`.
+3. Reemplaza los archivos si es necesario.
+4. ¡Disfruta!
+
+---
+*"Comprometido con la calidad técnica y la fidelidad narrativa."* **Creado por HissyKryx**
