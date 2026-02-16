@@ -7,7 +7,7 @@ Bienvenido al repositorio oficial de la traducción al español para el mod **Za
 
 ## 📸 Capturas
 <div align="center">
-  <img src="<img width="1920" height="1007" alt="2026-02-15_21-39" src="https://github.com/user-attachments/assets/b9be4b20-62e9-4954-abb7-39d249b62284" /> width="30%" />
+  <img src="https://github.com/user-attachments/assets/b9be4b20-62e9-4954-abb7-39d249b62284" width="30%" />
   
   <img src="https://github.com/user-attachments/assets/1b19932f-5003-48b7-902d-8bb97fa2a92e" width="30%" />
   
