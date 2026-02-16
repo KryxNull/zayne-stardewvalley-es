@@ -4,7 +4,7 @@
 
 Bienvenido al repositorio oficial de la traducción al español para el mod **Zayne (Love and Deepspace)** de Stardew Valley. Este proyecto incluye correcciones técnicas para asegurar la mejor experiencia posible.
 
-Estado: ![Estado](https://img.shields.io/badge/Estado-Completado-success) Idioma: ![Idioma](https://img.shields.io/badge/Idioma-Español-orange)
+![Estado](https://img.shields.io/badge/Estado-Completado-success) ![Idioma](https://img.shields.io/badge/Idioma-Español-orange)
 
 ## 📸 Capturas
 ![Captura 1](PON_AQUI_EL_LINK_DE_TU_CAPTURA)
