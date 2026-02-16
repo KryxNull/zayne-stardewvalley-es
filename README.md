@@ -1,6 +1,6 @@
 # 🧊 Love and Deepspace: Zayne - Traducción al Español
 
-![Banner de Zayne](PON_AQUI_EL_LINK_DE_TU_IMAGEN)
+![Banner de Zayne](![Portada](https://github.com/user-attachments/assets/c873ab3a-2ab0-460f-8c19-02433009109c))
 
 Bienvenido al repositorio oficial de la traducción al español para el mod **Zayne (Love and Deepspace)** de Stardew Valley. Este proyecto incluye correcciones técnicas para asegurar la mejor experiencia posible.
 
