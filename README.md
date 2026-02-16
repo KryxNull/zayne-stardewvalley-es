@@ -29,4 +29,5 @@ A diferencia de una traducción estándar, este proyecto requirió:
 4. ¡Disfruta!
 
 ---
-*"Comprometido con la calidad técnica y la fidelidad narrativa."* **Creado por HissyKryx**
+*"Comprometido con la calidad técnica y la fidelidad narrativa."* 
+**Creado por HissyKryx**
