@@ -1,0 +1,1965 @@
+{
+  "Format": "2.3.0",
+  "CustomLocations": [
+  {
+    "Name": "Custom_ZayneRoom",
+    "FromMapFile": "assets/Maps/SpouseRooms/ZayneSpouseRoom.tbin"
+  },
+   {
+    "Name": "Custom_ZayneArea",
+    "FromMapFile": "assets/Maps/SpouseRooms/Zayne_Spouse_Area.tbin"
+  },
+  {
+      "Name": "Custom_ZayneMap",
+      "FromMapFile": "assets/Maps/ZayneMap.tbin"
+    },
+  {
+      "Name": "Custom_ZayneHome",
+      "FromMapFile": "assets/Maps/ZayneHome.tbin"
+    },
+  {
+      "Name": "Custom_ZayneWQ",
+      "FromMapFile": "assets/Maps/ZayneWQ.tbin"
+    },    
+  {
+      "Name": "Custom_ZayneWenQuan",
+      "FromMapFile": "assets/Maps/ZayneWenQuan.tbin"
+    },
+    {
+      "Name": "Custom_ZayneShop",
+      "FromMapFile": "assets/Maps/ZayneShop.tbin"
+    },
+    {
+      "Name": "Custom_ZayneShopIn",
+      "FromMapFile": "assets/Maps/ZayneShopIn.tbin"
+    },
+    {
+      "Name": "Custom_XueShan",
+      "FromMapFile": "assets/Maps/XueShan.tbin"
+    },
+    {
+      "Name": "Custom_XueRong",
+      "FromMapFile": "assets/Maps/XueRong.tbin"
+    },
+    {
+      "Name": "Custom_FXTSG",
+      "FromMapFile": "assets/Maps/FXTSG.tbin"
+    },
+    {
+      "Name": "Custom_XSXW",
+      "FromMapFile": "assets/Maps/XSXW.tbin"
+    },
+    {
+        "Name": "Custom_ZayneCG1",
+        "FromMapFile": "assets/CG/ZayneCG1.tbin"
+      }
+                  ],
+    "ApSunglassPearance": [
+    {
+      "Id": "ZayneBeach",
+      "Condition": null,
+      "Season": null,
+      "Indoors": true,
+      "Outdoors": true,
+      "Portrait": "Portraits/Zayne_Beach",
+      "Sprite": "Characters/Zayne_Beach",
+      "IsIslandAttire": true
+    }
+  ],
+    "Appearance": [
+    {
+        "Id": "Zayne_Flower",
+        "Condition": "EVENT_ID festival_spring24",
+        "Season": null,
+        "Indoors": true,
+        "Outdoors": true,
+        "Portrait": "Portraits/Zayne_Flower",
+        "Sprite": "Characters/Zayne_Flower", 
+        "IsIslandAttire": false
+    }
+],
+"ConfigSchema": {
+    "Zayne Kids": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Zayne's kids  look like Zayne.",
+      "Section": "Dialogue Settings"
+    }
+  },
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Zayne": {
+          "DisplayName": "{{i18n:Zayne.DisplayName}}",
+          "BirthSeason": "fall",
+          "BirthDay": 5,
+          "Age": "Adult",
+          "HomeRegion": "Town",
+          "Language": "Default",
+          "Gender": "Male",
+          "CanSocialize": true,
+          "FestivalActorIndex": 12, 
+          "CanCommentOnPurchasedShopItems": false,
+          "CanReceiveGifts": true,
+          "IsDarkSkinned": false,
+          "CanBeRomanced": true,
+          "Calendar": "AlwaysShown",
+          "SocialTab": "AlwaysShown",
+          "SpouseWantsChildren": true,
+          "SpouseGiftJealousy": true,
+          "SpouseGiftJealousyFriendshipChange": 30,
+          "ItemDeliveryQuests": true,
+          "PerfectionScore": true,
+          "EndSlideShow": "MainGroup",
+          "CanVisitIsland": true,
+          "DumpsterDiveEmote": 8,
+          "DumpsterDiveFriendshipEffect": -25,
+          "FlowerDanceCanDance": true,
+          "WinterStarParticipant": true,
+          "FriendsAndFamily": {},
+          "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 99550001",
+          "CanTravel": true,
+      "AllowNPCToWanderAnywhere": true,
+      "CanVisitIslands": true,
+      "EnablePatrols": true,
+      "MoveTowardPlayer": true,
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_ZayneHome",
+              "Tile": {
+                "X": 8,
+                "Y": 13
+              },
+              "Direction": "right"
+            }
+          ],
+          "TextureName": null,
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+          "KissSpriteIndex": 28,
+          "HiddenProfileEmoteSound": null,
+          "HiddenProfileEmoteDuration": -1,
+          "HiddenProfileEmoteStartFrame": 16,
+          "HiddenProfileEmoteFrameCount": 4,
+          "HiddenProfileEmoteFrameDuration": 200.0,
+          "FestivalVanillaActorIndex": 0,
+          "CustomFields": {},
+          "SpouseRoom": {
+            "MapAsset": "Custom_ZayneRoom",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 6,
+              "Height": 9
+            }
+          },
+          "SpousePatio": {
+            "MapAsset": "Zayne_Spouse_Area",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 4,
+              "Height": 4
+            }
+          }
+        }
+      }
+    },
+    {
+    "Action": "EditData",
+    "Target": "Data/NPCGiftTastes",
+    "Entries": {
+        "Zayne": "{{i18n:Zayne.GiftTastes.Love}}/Jasmine Macaron/{{i18n:Zayne.GiftTastes.Like}}/IcePop MilkTea SunglassPear HappyTomato/{{i18n:Zayne.GiftTastes.Dislike}}/348 346 303 459 733/{{i18n:Zayne.GiftTastes.Hate}}/Carrot/{{i18n:Zayne.GiftTastes.Neutral}}//"
+    }
+},
+{
+    "Action": "EditData",
+    "Target": "Data/NPCGiftTastes",
+    "Entries": {
+        "Zayne": "{{i18n:Zayne.GiftTastes.Married.Love}}/Jasmine Macaron/{{i18n:Zayne.GiftTastes.Married.Like}}/IcePop MilkTea SunglassPear HappyTomato/{{i18n:Zayne.GiftTastes.Married.Dislike}}/348 346 303 459 733/{{i18n:Zayne.GiftTastes.Married.Hate}}/Carrot/{{i18n:Zayne.GiftTastes.Married.Neutral}}//"
+    },
+    "When": {
+        "Relationship:Zayne": "Married"
+    }
+},
+    {
+  "Action": "EditData",
+  "Target": "Data/ExtraDialogue",
+  "Entries": {
+    "Mines_PlayerKilled_Spouse_PlayerFemale": "{{i18n:Zayne.Dialogue.Mines_Spouse_Female}}",
+    "Mines_PlayerKilled_Spouse_PlayerMale": "{{i18n:Zayne.Dialogue.Mines_Spouse_Male}}"
+  },
+  "When": {
+    "Relationship:Zayne": "Married"
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Strings/Characters",
+  "Entries": {
+    "MovieInvite_Invited_Zayne": "{{i18n:Zayne.Dialogue.MovieInvite_Invited}}",
+    "MovieInvite_Spouse_Zayne": "{{i18n:Zayne.Dialogue.MovieInvite_Spouse}}"
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Events",
+  "Entries": {
+    "HaveBabyQuestion": "{{i18n:Zayne.Dialogue.HaveBabyQuestion}}",
+    "HaveBabyAnswer_Yes": "{{i18n:Zayne.Dialogue.HaveBabyAnswer_Yes}}",
+    "HaveBabyAnswer_No": "{{i18n:Zayne.Dialogue.HaveBabyAnswer_No}}",
+    "HavePlayerBabyQuestion": "{{i18n:Zayne.Dialogue.HavePlayerBabyQuestion}}"
+  },
+  "When": {
+    "Relationship:Zayne": "Married"
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Strings/StringsFromCSFiles",
+  "Entries": {
+    "NPC.cs.4406": "{{i18n:Zayne.Dialogue.NPC.cs.4406}}",
+    "NPC.cs.4432": "{{i18n:Zayne.Dialogue.NPC.cs.4432}}",
+    "NPC.cs.4444": "{{i18n:Zayne.Dialogue.NPC.cs.4444}}",
+    "NPC.cs.4447": "{{i18n:Zayne.Dialogue.NPC.cs.4447}}",
+    "NPC.cs.4448": "{{i18n:Zayne.Dialogue.NPC.cs.4448}}"
+  },
+  "When": {
+    "Relationship:Zayne": "Married"
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Strings/StringsFromCSFiles",
+  "Entries": {
+    "Zayne_Engaged": "{{i18n:Zayne.Dialogue.Zayne_Engaged}}",
+    "Zayne_AfterWedding": "{{i18n:Zayne.Dialogue.Zayne_AfterWedding}}"
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Strings/StringsFromMaps",
+  "Entries": {
+    "ZayneHome.1": "{{i18n:Zayne.ZayneHome.1}}",
+    "ZayneHome.2": "{{i18n:Zayne.ZayneHome.2}}",
+    "ZayneHome.3": "{{i18n:Zayne.ZayneHome.3}}",
+    "ZayneHome.4": "{{i18n:Zayne.ZayneHome.4}}",
+    "ZayneHome.5": "{{i18n:Zayne.ZayneHome.5}}",
+    "ZayneMap.1": "{{i18n:Zayne.ZayneMap.1}}"
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/EngagementDialogue",
+  "Entries": {
+    "Zayne0": "{{i18n:Zayne.Dialogue.Engagement.Zayne0}}",
+    "Zayne1": "{{i18n:Zayne.Dialogue.Engagement.Zayne1}}"
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/ExtraDialogue",
+  "Entries": {
+    "SummitEvent_Dialogue3_Zayne": "{{i18n:Zayne.Dialogue.SummitEvent}}"
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Strings/Characters",
+  "Entries": {
+    "MovieInvite_Invited_Zayne": "{{i18n:Zayne.Dialogue.MovieInvite_Invited_Alt}}",
+    "MovieInvite_Spouse_Zayne": "{{i18n:Zayne.Dialogue.MovieInvite_Spouse_Alt}}"
+  }
+},
+//专属物品
+    {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": {
+        "JasmineSeed": {
+            "Name": "JasmineSeed",
+            "DisplayName": "{{i18n:Zayne.Items.JasmineSeed.DisplayName}}",
+            "Description": "{{i18n:Zayne.Items.JasmineSeed.Description}}",
+            "Type": "Seeds",
+            "Category": -74,
+            "Price": 520,
+            "Texture": "assets/image/Jasmine Seeds",
+            "SpriteIndex": 0
+        }
+    }
+},
+{
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": {
+        "Jasmine": {
+            "Name": "Jasmine",
+            "DisplayName": "{{i18n:Zayne.Items.Jasmine.DisplayName}}",
+            "Description": "{{i18n:Zayne.Items.Jasmine.Description}}",
+            "Type": "Basic",
+            "Category": -80,
+            "Price": 20,
+            "Texture": "assets/image/Jasmine",
+            "SpriteIndex": 0,
+            "Edibility": -300
+        }
+    }
+},
+{
+    "Action": "EditData",
+    "Target": "Data/Crops",
+    "Entries": {
+        "JasmineSeed": {
+            "Seasons": ["spring"],
+            "DaysInPhase": [1,2,2,2,1],
+            "IsRaised": false,
+            "HarvestMethod": 0,
+            "RegrowDays": 2,
+            "HarvestItemId": "Jasmine",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 2,
+            "Texture": "assets/image/Jasmine Crop",
+            "SpriteIndex": 0
+        }
+    }
+},
+{
+    "Action": "Load",
+    "Target": "assets/image/Jasmine Seeds",
+    "FromFile": "assets/image/Jasmine Seeds.png"
+},
+{
+    "Action": "Load",
+    "Target": "assets/image/Jasmine",
+    "FromFile": "assets/image/Jasmine.png"
+},
+{
+    "Action": "Load",
+    "Target": "assets/image/Jasmine Crop", 
+    "FromFile": "assets/image/Jasmine Crop.png"
+},
+{
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": {
+        "HappyTomatoSeeds": {
+            "Name": "HappyTomatoSeeds",
+            "DisplayName": "{{i18n:Zayne.Items.HappyTomatoSeeds.DisplayName}}",
+            "Description": "{{i18n:Zayne.Items.HappyTomatoSeeds.Description}}",
+            "Type": "Seeds",
+            "Category": -74,
+            "Price": 50,
+            "Texture": "assets/image/HappyTomato Seeds",
+            "SpriteIndex": 0,
+            "Edibility": -300,
+            "IsDrink": false,
+            "ExcludeFromFishingCollection": true,
+            "ExcludeFromShippingCollection": true,
+            "ExcludeFromRandomSale": true
+        }
+    }
+},
+{
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": {
+        "HappyTomato": {
+            "Name": "HappyTomato",
+            "DisplayName": "{{i18n:Zayne.Items.HappyTomato.DisplayName}}",
+            "Description": "{{i18n:Zayne.Items.HappyTomato.Description}}",
+            "Type": "Vegetable",
+            "Category": -75,
+            "Price": 30,
+            "Texture": "assets/image/HappyTomato",
+            "SpriteIndex": 0,
+            "Edibility": 31
+        }
+    }
+},
+{
+    "Action": "EditData",
+    "Target": "Data/Crops",
+    "Entries": {
+        "HappyTomatoSeeds": {
+            "Seasons": ["summer"],
+            "DaysInPhase": [1, 2, 2, 2, 1],
+            "IsRaised": false,
+            "HarvestMethod": 0,
+            "RegrowDays": 2,
+            "HarvestItemId": "HappyTomato",
+            "HarvestMinStack": 1,
+            "HarvestMaxStack": 3,
+            "Texture": "assets/image/HappyTomato Crop",
+            "SpriteIndex": 0
+        }
+    }
+},
+{
+    "Action": "Load",
+    "Target": "assets/image/HappyTomato Seeds",
+    "FromFile": "assets/image/HappyTomato Seeds.png"
+},
+{
+    "Action": "Load",
+    "Target": "assets/image/HappyTomato",
+    "FromFile": "assets/image/HappyTomato.png"
+},
+{
+    "Action": "Load",
+    "Target": "assets/image/HappyTomato Crop", 
+    "FromFile": "assets/image/HappyTomato Crop.png"
+},
+{
+    "Action": "Load",
+    "Target": "Mods/mlnlmmb.MacaronMod/Macaron",
+    "FromFile": "assets/Image/Macaron.png"  
+},
+{
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": {
+        "Macaron": {
+            "Name": "Macaron",
+            "DisplayName": "{{i18n:Zayne.Items.Macaron.DisplayName}}",
+            "Description": "{{i18n:Zayne.Items.Macaron.Description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 200,
+            "Texture": "Mods/mlnlmmb.MacaronMod/Macaron",  
+            "SpriteIndex": 0,
+            "Edibility": 96,
+            "IsDrink": false,
+            "ExcludeFromFishingCollection": true,
+            "ExcludeFromShippingCollection": true,
+            "ExcludeFromRandomSale": false,
+            "Buffs": [
+                {
+                    "Duration": 250,
+                    "CustomAttributes": {
+                        "FarmingLevel": 0,
+                        "FishingLevel": 0,
+                        "MiningLevel": 0,
+                        "LuckLevel": 1,
+                        "ForagingLevel": 0,
+                        "MaxStamina": 0,
+                        "MagneticRadius": 0,
+                        "Speed": 0,
+                        "Defense": 0,
+                        "Attack": 0
+                    }
+                }
+            ]
+        }
+    }
+},
+{
+    "Action": "EditData",
+    "Target": "Data/CookingRecipes",
+    "Entries": {
+        "Macaron": "245 3 -5 1 258 1/25 5/Macaron 1/k 99550004/" 
+    }
+},
+{
+    "Action": "Load",
+    "Target": "Mods/Zayne/JasmineMacaron",
+    "FromFile": "assets/Image/JasmineMacaron.png"  
+},
+{
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": {
+        "JasmineMacaron": {
+            "Name": "JasmineMacaron",
+            "DisplayName": "{{i18n:Zayne.Items.JasmineMacaron.DisplayName}}",
+            "Description": "{{i18n:Zayne.Items.JasmineMacaron.Description}}",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 520,
+            "Texture": "Mods/Zayne/JasmineMacaron",  
+            "SpriteIndex": 0,
+            "Edibility": 96,
+            "IsDrink": false,
+            "ExcludeFromFishingCollection": true,
+            "ExcludeFromShippingCollection": true,
+            "ExcludeFromRandomSale": false,
+            "Buffs": [
+                {
+                    "Duration": 250,
+                    "CustomAttributes": {
+                        "FarmingLevel": 0,
+                        "FishingLevel": 0,
+                        "MiningLevel": 0,
+                        "LuckLevel": 2,
+                        "ForagingLevel": 0,
+                        "MaxStamina": 0,
+                        "MagneticRadius": 0,
+                        "Speed": 0,
+                        "Defense": 0,
+                        "Attack": 0
+                    }
+                }
+            ]
+        }
+    }
+},
+{
+    "Action": "EditData",
+    "Target": "Data/CookingRecipes",
+    "Entries": {
+        "JasmineMacaron": "245 3 -5 1 Jasmine 99/25 5/JasmineMacaron 1/O Zayne/" 
+    }
+},
+{
+  "Action": "Load",  
+  "Target": "Mods/Zayne/MilkTea",
+  "FromFile": "assets/Image/MilkTea.png"
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Objects",  
+  "Entries": {
+    "MilkTea": {
+      "Name": "MilkTea",
+      "DisplayName": "{{i18n:Zayne.Items.MilkTea.DisplayName}}",
+      "Description": "{{i18n:Zayne.Items.MilkTea.Description}}",
+      "Type": "Cooking",
+      "Category": -7,
+      "Price": 100,
+      "Texture": "Mods/Zayne/MilkTea", 
+      "SpriteIndex": 0,
+      "Edibility": 96,
+      "IsDrink": true,
+      "ExcludeFromFishingCollection": true,
+      "ExcludeFromShippingCollection": true,
+      "ExcludeFromRandomSale": false,
+      "Buffs": [
+        {
+          "Duration": 250,
+          "CustomAttributes": {
+            "FarmingLevel": 0,
+            "FishingLevel": 0,
+            "MiningLevel": 0,
+            "LuckLevel": 1,
+            "ForagingLevel": 0,
+            "MaxStamina": 0,
+            "MagneticRadius": 0,
+            "Speed": 0,
+            "Defense": 0,
+            "Attack": 0
+          }
+        }
+      ]
+    }
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Shops",
+  "TargetField": [
+    "Saloon",
+    "Items"
+  ],
+  "Entries": {
+    "MilkTea": {
+      "Id": "MilkTea",
+      "ItemId": "MilkTea",
+      "AvailableStock": -1,
+      "IsRecipe": false,
+      "Price": 200
+    }
+  }
+},
+{
+  "Action": "Load",  
+  "Target": "Mods/Zayne/mlnlmmb",
+  "FromFile": "assets/Image/mlnlmmb.png"
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Objects",  
+  "Entries": {
+    "mlnlmmb": {
+      "Name": "mlnlmmb",
+      "DisplayName": "{{i18n:Zayne.Items.mlnlmmb.DisplayName}}",
+      "Description": "{{i18n:Zayne.Items.mlnlmmb.Description}}",
+      "Type": "Cooking",
+      "Category": -7,
+      "Price": 400,
+      "Texture": "Mods/Zayne/mlnlmmb", 
+      "SpriteIndex": 0,
+      "Edibility": 96,
+      "IsDrink": false,
+      "ExcludeFromFishingCollection": true,
+      "ExcludeFromShippingCollection": true,
+      "ExcludeFromRandomSale": false,
+      "Buffs": [
+        {
+          "Duration": 250,
+          "CustomAttributes": {
+            "FarmingLevel": 2,
+            "FishingLevel": 2,
+            "MiningLevel": 2,
+            "LuckLevel": 4,
+            "ForagingLevel": 2,
+            "MaxStamina": 2,
+            "MagneticRadius": 2,
+            "Speed": 2,
+            "Defense": 2,
+            "Attack": 2
+          }
+        }
+      ]
+    }
+  }
+},
+{
+  "Action": "Load",  
+  "Target": "Mods/Zayne/IcePop",
+  "FromFile": "assets/Image/IcePop.png"
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Objects",  
+  "Entries": {
+    "IcePop": {
+      "Name": "IcePop",
+      "DisplayName": "{{i18n:Zayne.Items.IcePop.DisplayName}}",
+      "Description": "{{i18n:Zayne.Items.IcePop.Description}}",
+      "Type": "Cooking",
+      "Category": -7,
+      "Price": 100,
+      "Texture": "Mods/Zayne/IcePop", 
+      "SpriteIndex": 0,
+      "Edibility": 10,
+      "IsDrink": false,
+      "ExcludeFromFishingCollection": true,
+      "ExcludeFromShippingCollection": true,
+      "ExcludeFromRandomSale": false,
+      "Buffs": [
+        {
+          "Duration": 250,
+          "CustomAttributes": {
+            "FarmingLevel": 0,
+            "FishingLevel": 0,
+            "MiningLevel": 0,
+            "LuckLevel": 0,
+            "ForagingLevel": 0,
+            "MaxStamina": 0,
+            "MagneticRadius": 0,
+            "Speed": 0,
+            "Defense": 0,
+            "Attack": 0
+          }
+        }
+      ]
+    }
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Shops",
+  "TargetField": [
+    "IceCreamStand",
+    "Items"
+  ],
+  "Entries": {
+    "IcePop": {
+      "Id": "IcePop",
+      "ItemId": "IcePop",
+      "AvailableStock": -1,
+      "IsRecipe": false,
+      "Price": 120
+    }
+  }
+},
+
+{
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": {
+        "SunglassPear": {
+            "Name": "SunglassPear",
+            "DisplayName": "{{i18n:Zayne.Sunglass.DisplayName}}",
+            "Description": "{{i18n:Zayne.Sunglass.Description}}",
+            "Type": "fruits",
+            "Edibility": 25,
+            "Category": -79,
+            "Price": 200,
+            "Texture": "Mods\\mlnlmmb.NewFruiter\\Objects\\SunglassPear",
+            "TextureSpriteRow": 0
+        }
+    }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Objects",
+  "Entries": {
+    "SunglassPearSapling": {
+    "Name": "SunglassPearSapling",
+    "DisplayName": "{{i18n:Zayne.SunglassPearSapling.DisplayName}}",
+    "Description": "{{i18n:Zayne.SunglassPearSapling.Description}}",
+    "Type": "Basic",
+    "Category": -74,
+    "Price": 5000,
+    "Texture": "Mods\\mlnlmmb.NewFruiter\\Objects\\SunglassPearsapling",
+    "SpriteIndex": 0
+    }
+  }
+  },
+  {
+  "Action": "EditData",
+  "Target": "Data/FruitTrees",
+  "Entries": {
+      "SunglassPearSapling": {
+          "DisplayName": "SunglassPearSapling",
+          "Seasons": [ "spring" ],
+          "Fruit": [
+            {
+                "Id": "Default",
+                  "ItemId": "SunglassPear"
+              }
+          ],
+          "Texture": "Mods\\mlnlmmb.NewFruiter\\Objects\\FruitTrees",
+          "TextureSpriteRow": 0
+      }
+  }
+},
+ {
+      "LogName": "Load Fruit Trees Tilesheet",
+      "Action": "Load",
+      "Target": "Mods/mlnlmmb.NewFruiter/Objects/FruitTrees",
+      "FromFile": "assets/image/SunglassPearTree.png"
+  },
+  {
+    "LogName": "Load Fruit Trees Tilesheet",
+    "Action": "Load",
+    "Target": "Mods/mlnlmmb.NewFruiter/Objects/SunglassPearsapling",
+    "FromFile": "assets/image/SunglassPear Sapling.png"
+},
+  {
+      "LogName": "Load Fruit Trees Saplings Tilesheet",
+      "Action": "Load",
+      "Target": "Mods/mlnlmmb.NewFruiter/Objects/SunglassPear",
+      "FromFile": "assets/image/SunglassPear.png"
+  },
+  {
+      "LogName": "PortraitFrames Data",
+      "Action": "EditData",
+      "Target": "Data/Furniture",
+      "Entries": {
+          "Zayne_Painting": "Zayne_Painting/painting/2 2/2 2/1/999/0/{{i18n:Zayne.Painting}}/0/Zayne\\Objects\\PortraitFrames"
+      }
+  },
+{
+      "LogName": "Load PortraitFrames Tilesheet",
+      "Action": "Load",
+      "Target": "Zayne/Objects/PortraitFrames",
+      "FromFile": "assets/Image/Zayne_Painting.png"
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Shops",
+    "TargetField": ["Traveler", "Items"],
+    "Entries": {
+        "Zayne_Painting": {
+            "Id": "Zayne_Painting",
+            "ItemId": "Zayne_Painting",
+            "AvailableStock": 1,
+            "IsRecipe": false,
+            "Price": 9999,
+            "Condition": "PLAYER_HEARTS Zayne 14 14"
+        }
+    }
+},
+//甜品店
+{
+  "Action": "Load",  
+  "Target": "Mods/Zayne/Cheesecake",
+  "FromFile": "assets/Shop/Cheesecake.png"
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Objects",  
+  "Entries": {
+    "Cheesecake": {
+      "Name": "Cheesecake",
+      "DisplayName": "{{i18n:Zayne.Items.Cheesecake.DisplayName}}",
+      "Description": "{{i18n:Zayne.Items.Cheesecake.Description}}",
+      "Type": "Cooking",
+      "Category": -7,
+      "Price": 520,
+      "Texture": "Mods/Zayne/Cheesecake", 
+      "SpriteIndex": 0,
+      "Edibility": 50,
+      "IsDrink": false,
+      "ExcludeFromFishingCollection": true,
+      "ExcludeFromShippingCollection": true,
+      "ExcludeFromRandomSale": false
+    }
+  }
+},
+{
+  "Action": "Load",  
+  "Target": "Mods/Zayne/Taro Paste Cake",
+  "FromFile": "assets/Shop/Taro Paste Cake.png"
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Objects",  
+  "Entries": {
+    "Taro Paste Cake": {
+      "Name": "Taro Paste Cake",
+      "DisplayName": "{{i18n:Zayne.Items.TaroPasteCake.DisplayName}}",
+      "Description": "{{i18n:Zayne.Items.TaroPasteCake.Description}}",
+      "Type": "Cooking",
+      "Category": -7,
+      "Price": 520,
+      "Texture": "Mods/Zayne/Taro Paste Cake", 
+      "SpriteIndex": 0,
+      "Edibility": 50,
+      "IsDrink": false,
+      "ExcludeFromFishingCollection": true,
+      "ExcludeFromShippingCollection": true,
+      "ExcludeFromRandomSale": false
+    }
+  }
+},
+{
+  "Action": "Load",  
+  "Target": "Mods/Zayne/Sea Salt Ice Bok Roll",
+  "FromFile": "assets/Shop/Sea Salt Ice Bok Roll.png"
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Objects",  
+  "Entries": {
+    "Sea Salt Ice Bok Roll": {
+      "Name": "Sea Salt Ice Bok Roll",
+      "DisplayName": "{{i18n:Zayne.Items.SeaSaltIceBokRoll.DisplayName}}",
+      "Description": "{{i18n:Zayne.Items.SeaSaltIceBokRoll.Description}}",
+      "Type": "Cooking",
+      "Category": -7,
+      "Price": 520,
+      "Texture": "Mods/Zayne/Sea Salt Ice Bok Roll", 
+      "SpriteIndex": 0,
+      "Edibility": 50,
+      "IsDrink": false,
+      "ExcludeFromFishingCollection": true,
+      "ExcludeFromShippingCollection": true,
+      "ExcludeFromRandomSale": false
+    }
+  }
+},
+{
+  "Action": "Load",  
+  "Target": "Mods/Zayne/Strawberry Macaron",
+  "FromFile": "assets/Shop/Strawberry Macaron.png"
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Objects",  
+  "Entries": {
+    "Strawberry Macaron": {
+      "Name": "Strawberry Macaron",
+      "DisplayName": "{{i18n:Zayne.Items.StrawberryMacaron.DisplayName}}",
+      "Description": "{{i18n:Zayne.Items.StrawberryMacaron.Description}}",
+      "Type": "Cooking",
+      "Category": -7,
+      "Price": 520,
+      "Texture": "Mods/Zayne/Strawberry Macaron", 
+      "SpriteIndex": 0,
+      "Edibility": 50,
+      "IsDrink": false,
+      "ExcludeFromFishingCollection": true,
+      "ExcludeFromShippingCollection": true,
+      "ExcludeFromRandomSale": false
+    }
+  }
+},
+{
+  "Action": "Load",  
+  "Target": "Mods/Zayne/Maple Syrup Croissant",
+  "FromFile": "assets/Shop/Maple Syrup Croissant.png"
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Objects",  
+  "Entries": {
+    "Maple Syrup Croissant": {
+      "Name": "Maple Syrup Croissant",
+      "DisplayName": "{{i18n:Zayne.Items.MapleSyrupCroissant.DisplayName}}",
+      "Description": "{{i18n:Zayne.Items.MapleSyrupCroissant.Description}}",
+      "Type": "Cooking",
+      "Category": -7,
+      "Price": 520,
+      "Texture": "Mods/Zayne/Maple Syrup Croissant", 
+      "SpriteIndex": 0,
+      "Edibility": 50,
+      "IsDrink": false,
+      "ExcludeFromFishingCollection": true,
+      "ExcludeFromShippingCollection": true,
+      "ExcludeFromRandomSale": false
+    }
+  }
+},
+{
+  "Action": "Load",  
+  "Target": "Mods/Zayne/Snow Kiss Chocolate",
+  "FromFile": "assets/Shop/Snow Kiss Chocolate.png"
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Objects",  
+  "Entries": {
+    "Snow Kiss Chocolate": {
+      "Name": "Snow Kiss Chocolate",
+      "DisplayName": "{{i18n:Zayne.Items.SnowKissChocolate.DisplayName}}",
+      "Description": "{{i18n:Zayne.Items.SnowKissChocolate.Description}}",
+      "Type": "Cooking",
+      "Category": -7,
+      "Price": 520,
+      "Texture": "Mods/Zayne/Snow Kiss Chocolate", 
+      "SpriteIndex": 0,
+      "Edibility": 50,
+      "IsDrink": false,
+      "ExcludeFromFishingCollection": true,
+      "ExcludeFromShippingCollection": true,
+      "ExcludeFromRandomSale": false
+    }
+  }
+},
+{
+  "Action": "Load",  
+  "Target": "Mods/Zayne/Molten Chocolate Cake",
+  "FromFile": "assets/Shop/Molten Chocolate Cake.png"
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Objects",  
+  "Entries": {
+    "Molten Chocolate Cake": {
+      "Name": "Molten Chocolate Cake",
+      "DisplayName": "{{i18n:Zayne.Items.MoltenChocolateCake.DisplayName}}",
+      "Description": "{{i18n:Zayne.Items.MoltenChocolateCake.Description}}",
+      "Type": "Cooking",
+      "Category": -7,
+      "Price": 520,
+      "Texture": "Mods/Zayne/Molten Chocolate Cake", 
+      "SpriteIndex": 0,
+      "Edibility": 50,
+      "IsDrink": false,
+      "ExcludeFromFishingCollection": true,
+      "ExcludeFromShippingCollection": true,
+      "ExcludeFromRandomSale": false
+    }
+  }
+},
+{
+  "Action": "Load",  
+  "Target": "Mods/Zayne/Taro Paste Ice Cream",
+  "FromFile": "assets/Shop/Taro Paste Ice Cream.png"
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Objects",  
+  "Entries": {
+    "Taro Paste Ice Cream": {
+      "Name": "Taro Paste Ice Cream",
+      "DisplayName": "{{i18n:Zayne.Items.TaroPasteIceCream.DisplayName}}",
+      "Description": "{{i18n:Zayne.Items.TaroPasteIceCream.Description}}",
+      "Type": "Cooking",
+      "Category": -7,
+      "Price": 520,
+      "Texture": "Mods/Zayne/Taro Paste Ice Cream", 
+      "SpriteIndex": 0,
+      "Edibility": 50,
+      "IsDrink": false,
+      "ExcludeFromFishingCollection": true,
+      "ExcludeFromShippingCollection": true,
+      "ExcludeFromRandomSale": false
+    }
+  }
+},
+{
+  "Action": "Load",  
+  "Target": "Mods/Zayne/Caramel Egg Tart",
+  "FromFile": "assets/Shop/Caramel Egg Tart.png"
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Objects",  
+  "Entries": {
+    "Caramel Egg Tart": {
+      "Name": "Caramel Egg Tart",
+      "DisplayName": "{{i18n:Zayne.Items.CaramelEggTart.DisplayName}}",
+      "Description": "{{i18n:Zayne.Items.CaramelEggTart.Description}}",
+      "Type": "Cooking",
+      "Category": -7,
+      "Price": 520,
+      "Texture": "Mods/Zayne/Caramel Egg Tart", 
+      "SpriteIndex": 0,
+      "Edibility": 50,
+      "IsDrink": false,
+      "ExcludeFromFishingCollection": true,
+      "ExcludeFromShippingCollection": true,
+      "ExcludeFromRandomSale": false
+    }
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Events/ArchaeologyHouse",
+  "Entries": {
+    "99550001/n ZayneFirstMail/w sunny/t 800 1800": "continue/16 10/farmer 17 9 0 Zayne 11 9 1/skippable/message \"La luz del sol se filtra por los grandes ventanales del museo, dibujando patrones de luces y sombras en el suelo de madera mientras hojeas un libro sobre hierbas medicinales.\"/pause 1000/message \"Tus dedos recorren las páginas, pero tu mente divaga... Has oído que el centro de investigación va a enviar a un joven médico, y una vaga e inexplicable anticipación se agita en tu interior.\"/pause 1000/move Zayne 4 0 1/pause 500/message \"Te pones de puntillas para devolver el pesado volumen al estante superior cuando una voz suave y profunda habla detrás de ti.\"/speak Zayne \"¿Necesitas ayuda? @.\"/message \"Esa voz... como una brisa de otoño rozando un lago, trayendo una familiar frescura que calma tu inquietud.\"/move farmer 0 0 3/emote farmer 16/message \"Te giras bruscamente y te encuentras con una mirada profunda: es Zayne. Está bañado por una luz cálida, más alto y apuesto de lo que recordabas de hace años.\"/pause 1000/message \"'¿Zayne?' Tu voz tiembla, sin poder evitarlo.\"/pause 1000/message \"Él se ajusta ligeramente las gafas, recorriendo tus rasgos con la mirada como si estuviera memorizando cada detalle.\"/speak Zayne \"Mmm, ha pasado mucho tiempo, @.\"/message \"Toma el libro de tus manos y lo coloca en el estante con suavidad. Te quedas mirando, y su imagen se superpone con la del chico de catorce años que una vez te entregó un amuleto de foquita antes de irse a la universidad, diciendo: 'Deja que esta pequeña foquita te haga compañía'. Lo has llevado contigo desde entonces.\"/speak Zayne \"No pensé que todavía lo conservaras.\"/message \"'No pensé que volverías a Pueblo Pelícano', respondes.\"/pause 1000/speak Zayne \"Pueblo Pelícano necesita al centro de investigación.\"/message \"Y yo te necesito a ti... Él deja esas palabras sin decir.\"/pause 1000/message \"'Bienvenido a casa, Little Li', dices.\"/emote farmer 32/speak Zayne \"Esta vez, me quedo.\"/end"
+  }
+},//重逢
+{
+  "Action": "EditData",
+  "Target": "Data/Events/Woods",
+  "Entries": {
+    "99550002/f Zayne 500/t 1200 1600/w sunny": "continue/12 18/farmer 17 16 3 Zayne 10 16 1/skippable/pause 1000/message \"(Entras en el Bosque Secreto y encuentras a Zayne de pie en un pequeño claro, contemplando la luz del sol que se filtra a través de las copas de los árboles.)\"/pause 500/move farmer -5 0 2/pause 500/faceDirection farmer 3/pause 500/message \"(Él se gira al oír tus pasos.)\"/pause 500/message \"(Una suave sonrisa asoma a sus labios.)\"/speak Zayne \"@, la tranquilidad de este lugar es realmente cautivadora, ¿no crees?\"/pause 300/message \"'Parece que a ti también te gusta este sitio', dices.\"/speak Zayne \"Mm. Me trae muchos recuerdos de nuestra infancia. $1\"/speak Zayne \"Comparado con la playa o la plaza, el aire aquí se siente más... reconfortante. Y...\"/pause 1000/speak Zayne \"Mira.\"/pause 500/speak Zayne \"Un jazmín. No esperaba encontrarlo en este bosque semi salvaje.\"/pause 1000/message \"(Su mirada se vuelve distante, como si viera a través de las flores un pasado lejano.)\"/speak Zayne \"Al ver esto, de repente recuerdo algo de hace mucho tiempo. Éramos muy jóvenes, en una tarde de verano muy parecida a esta; nos perdimos detrás de los matorrales a las afueras del pueblo y tropezamos con un campo de jazmines abandonado.\"/pause 1000/speak Zayne \"¿Lo recuerdas?\"/pause 500/emote farmer 60/pause 1000/speak Zayne \"Dijiste que la fragancia era dulce. Incluso enterramos una 'cápsula del tiempo' allí, prometiendo que la desenterraríamos juntos cuando creciéramos... aunque ninguno de los dos volvió a encontrar el lugar exacto.\"/pause 500/speak Zayne \"Para ti, probablemente fue solo una tarde ordinaria entre muchas otras. Pero para mí...\"/pause 1000/speak Zayne \"Estas flores están floreciendo hermosamente. $1\"/pause 1000/speak Zayne \"Las encontré. Semillas de jazmín.\"/pause 500/pause 500/speak Zayne \"Ten. [JasmineSeed]#$b#No es tan bonito como un ramo, pero...#$b#Plántalas en tu granja. Deja que el aroma de este bosque, y de nuestros recuerdos, eche raíces en tu tierra.\"/pause 500/speak Zayne \"La próxima vez que visite tu granja, espero verlas brotar. Entonces... podremos recordar más cosas juntos. $1\"/end"
+  }
+},//2心
+{
+  "Action": "EditData",
+  "Target": "Data/Events/Saloon",
+  "Entries": {
+    "99550004/f Zayne 1000/t 1400 1800/w sunny": "continue/10 9/farmer 9 7 0 Zayne 5 5 1/skippable/pause 1000/message \"(Empujas la puerta de madera del salón y las campanas tintinean suavemente. Zayne ya está sentado en una esquina junto a la ventana, rodeado por el dorado de los árboles de ginkgo en el exterior. Frente a él hay dos bebidas humeantes: un café con un diseño artístico y un tazón de sopa de coco que pidió pensando en tus gustos. Un pequeño plato de coloridos macarrons decora el centro de la mesa.)\"/pause 1000/move farmer 0 -2 3/message \"(Zayne levanta la vista al oírte y su mirada se suaviza al instante, con una sonrisa natural asomando en sus labios.)\"/speak Zayne \"Llegas justo a tiempo. Supuse que después de trabajar en la granja necesitarías un poco de azúcar para reponer energías. [218]$1\"/pause 500/message \"(Te hace un gesto para que te sientes y acerca suavemente la sopa de coco hacia ti.)\"/speak Zayne \"El sol de la tarde es agradable, pero después de cultivar, algo caliente te sentará mejor.\"/pause 500/message \"'¿Parece que aún recuerdas que me gusta la sopa de coco?', dices.\"/pause 500/speak Zayne \"Siempre suelo prestar un poco más de atención a las cosas que te conciernen. $4\"/pause 500/message \"(Con sus dedos largos y definidos, acerca el plato de macarrons hacia ti unos centímetros más.)\"/speak Zayne \"Pruébalos. Recuerdo que... de pequeño te gustaban estas cosas que se ven delicadas y tienen un toque dulce. [Macaron]^Pruébalos. Recuerdo que... de pequeña te gustaban estas cosas que se ven delicadas y tienen un toque dulce. [Macaron]\"/pause 1000/message \"(Pruebas un macarron mientras Zayne no toca su parte; se queda mirándote en silencio, con una mirada atenta, como si observara cada pequeño cambio en tu expresión.)\"/pause 1500/message \"(Solo después de que tragas, habla en voz baja, con una pizca de expectación casi imperceptible.)\"/speak Zayne \"¿Qué tal el sabor? ¿Es demasiado dulce?\"/pause 500/message \"Es dulce, pero en su punto justo, nada empalagoso.\"/pause 500/speak Zayne \"Me alegra oír eso. $1\"/pause 500/message \"(La ligera tensión en su rostro se transforma en una sonrisa más profunda y deja escapar una risita baja.)\"/speak Zayne \"Dicen que el azul es de vainilla con sal marina. Cada color representa un sabor y un estado de ánimo diferente, como si fueran un código.\"/pause 1000/message \"(Le da un pequeño mordisco a uno, saboreándolo pensativo.)\"/pause 1500/speak Zayne \"En realidad...\"/pause 500/message \"(Deja el macarron a medio comer y saca de su lado ese cuaderno con tapa de cuero que le has visto antes. Con cuidado, extrae una hoja de papel algo desgastada por los bordes, pero doblada con una pulcritud impecable.)\"/pause 1000/speak Zayne \"Últimamente... he estado investigando algunas recetas de repostería.\"/pause 500/message \"(Sus dedos se detienen un momento sobre el papel, como si estuviera tomando una pequeña decisión, antes de deslizarlo suavemente hacia ti.)\"/pause 1000/speak Zayne \"Esta es la receta base de los macarrons. Tras consultar varios libros y... mis propios intentos, ajusté las proporciones de azúcar y harina de almendras. Después de algunos fallos, esta versión debería ser más fácil de lograr que la receta estándar comercial.\"/pause 1000/message \"(Tu rostro muestra una sorpresa evidente.)\"/pause 1000/speak Zayne \"He pensado... que si eres tú, podrías cultivar los arándanos de mejor calidad para el relleno.\"/pause 500/speak Zayne \"Cuando llegue el momento... podríamos intentar recrear juntos el sabor de hoy, o quizás...\"/pause 500/speak Zayne \"Crear sabores nuevos y únicos que solo pertenezcan a nuestros recuerdos.\"/pause 1000/message \"(Al tomar la receta, tus dedos rozan los suyos por un instante. Él parece detenerse un segundo, para luego retirar la mano con naturalidad, acariciando el borde cálido de su taza de café.)\"/pause 1500/speak Zayne \"Así que... la próxima vez, cuando coseches los arándanos de tu granja, ¿podría... tomar prestada tu cocina? $4\"/pause 500/speak Zayne \"Tengo muchas ganas de experimentar contigo todo el proceso, desde la tierra hasta la mesa. Seguramente será mucho más dulce que probarlo a solas. $1\"/pause 1000/message \"(La luz del atardecer se vuelve más intensa, envolviéndolo en un halo cálido. Te mira con una esperanza pura y una ternura casi solemne. Tú asientes con la cabeza.)\"/pause 1500/addCookingRecipe Macaron/pause 1000/speak Zayne \"Entonces, queda prometido. $1\"/pause 500/pause 1000/end"
+  }
+},//4心
+{
+  "Action": "EditData",
+  "Target": "Data/Events/FarmHouse",
+  "Entries": {
+    "99550006/f Zayne 1500/t 2200 2600": "continue/10 9/farmer 42 27 3 Zayne 41 27 1/skippable/pause 1000/message \"Bebiste un poco a solas, pero se te subió a la cabeza sin querer. Zayne te ayuda a volver a la granja y te sienta con cuidado en la cama.\"/pause 500/emote Zayne 16/pause 500/speak Zayne \"¿Dónde guardas la miel? Necesito prepararte un poco de agua con miel para que se te pase el efecto del alcohol.\"/pause 500/message \"No te vayas... quédate conmigo un rato...\"/pause 500/speak Zayne \"Está bien, no me iré. $1\"/message \"Se queda sorprendido un instante, pero luego accede dócilmente y se sienta al borde de la cama, tomando con suavidad tu mano, que está algo caliente por la embriaguez.\"/pause 500/message \"Acomoda con cuidado la almohada detrás de ti para que estés más cómodo y luego, con la yema de sus dedos, masajea suavemente tus sienes.^Acomoda con cuidado la almohada detrás de ti para que estés más cómoda y luego, con la yema de sus dedos, masajea suavemente tus sienes.\"/pause 500/message \"Al ver que frunces el ceño, se levanta para humedecer una toalla con agua tibia. Limpia tus mejillas y tu cuello con una delicadeza extrema, como si fueras un tesoro frágil.\"/pause 500/speak Zayne \"Espérame un momento, volveré pronto.\"/message \"Aprovechando que te calmas un poco, va a la cocina a buscar la miel. Ajusta con cuidado la temperatura del agua, asegurándose de que no esté tan caliente como para quemarte ni tan fría como para sentarte mal.\"/pause 1000/message \"Regresa con el agua con miel, te incorpora con cuidado para que te apoyes en su hombro y, mientras sostiene la taza con firmeza, te da palmaditas suaves en la espalda.\"/pause 500/speak Zayne \"Bebe despacio, con cuidado de no quemarte.\"/pause 1000/message \"Después de que bebes, vuelve a humedecer la toalla para limpiar tu frente y las palmas de tus manos, cuidando con esmero incluso el espacio entre tus dedos.\"/pause 500/message \"Nota que tu cuello está algo desordenado y lo arregla con cuidado; luego te quita los zapatos y te ayuda a recostarte en una postura cómoda.\"/pause 500/emote Zayne 16/pause 1000/speak Zayne \"Sabiendo que no aguantas mucho el alcohol, y aun así bebes tanto... $2\"/message \"Sus susurros no contienen reproche, solo preocupación. Con sus dedos, aparta suavemente un mechón de pelo de tu frente y lo coloca tras tu oreja.\"/pause 500/speak Zayne \"Si alguna vez quieres beber, dímelo y lo haremos juntos. Al menos... así podré asegurarme de que estés a salvo. $4\"/pause 1000/message \"Se sienta en la silla junto a la cama y te tapa con la manta. Sigue sosteniendo tu mano con ternura mientras la luz de la luna, a través de la ventana, dibuja su silueta protectora.\"/pause 1500/speak Zayne \"Estar así de indefenso... es algo que solo puedes permitirte frente a mí.^Estar así de indefensa... es algo que solo puedes permitirte frente a mí.$4\"/pause 500/message \"Empieza a tararear en voz baja esa melodía que una vez mencionaste que te gustaba. Su voz es profunda y cálida, y continúa hasta que tu respiración se vuelve pausada.\"/pause 1000/message \"Tras confirmar que estás profundamente dormido, retira con cuidado su brazo, que ya empezaba a entumecerse, y deja el resto del agua con miel en la mesita de noche, a tu alcance.^Tras confirmar que estás profundamente dormida, retira con cuidado su brazo, que ya empezaba a entumecerse, y deja el resto del agua con miel en la mesita de noche, a tu alcance.\"/pause 500/message \"Enciende una pequeña lámpara para que no te sientas desorientado si despiertas en la oscuridad, y deja una nota junto a una bolsita de té de hierbas que él mismo preparó para calmar los nervios.^Enciende una pequeña lámpara para que no te sientas desorientada si despiertas en la oscuridad, y deja una nota junto a una bolsita de té de hierbas que él mismo preparó para calmar los nervios.\"/pause 500/message \"En la nota se lee su caligrafía familiar: 『Tienes agua con miel al lado. Si te duele la cabeza al despertar, prepara el té con agua caliente. Si me necesitas, llámame en cualquier momento. — Zayne』\"/pause 500/addObject 340 5/pause 1000/message \"Te arropa por última vez, se detiene un momento en la puerta para asegurarse de que duermes tranquilo y, tras apagar la luz principal, sale en silencio cerrando la puerta con suavidad.^Te arropa por última vez, se detiene un momento en la puerta para asegurarse de que duermes tranquila y, tras apagar la luz principal, sale en silencio cerrando la puerta con suavidad.\"/pause 500/move Zayne -1 0 1/pause 300/move Zayne -1 0 1/pause 300/faceDirection Zayne 1/pause 500/globalFade/pause 1000/end"
+  }
+},//6心
+{
+  "Action": "EditData",
+  "Target": "Data/Events/Railroad",
+  "Entries": {
+    "99550008/t 1800 2400/n ZayneSnowyMail": "continue/44 53/farmer 38 53 1 Zayne 45 53 3/skippable/pause 1000/message \"Llegas a las termas por invitación suya; los copos de nieve caen entrelazándose en el aire.\"/pause 1000/message \"Zayne tiene nieve fina sobre sus hombros. Al verte, las comisuras de sus ojos se curvan ligeramente.\"/pause 500/speak Zayne \"Parece que la nieve aquí es incluso más tranquila que la del pueblo. $1\"/pause 1000/message \"Observáis juntos, hombro con hombro, cómo la nieve cae en silencio sobre el agua. El aire está en calma, pero no es un silencio incómodo.\"/pause 1000/speak Zayne \"De repente me han entrado ganas de construir algo. $1\"/pause 500/move Zayne -1 0 3/pause 500/move farmer 4 0 1/pause 500/message \"Empezáis a rodar bolas de nieve. Zayne moldea una pequeña figura con mucha seriedad, concentrado como si estuviera esculpiendo una obra de arte, aunque el resultado tiene una sencillez algo redondeada y tierna.\"/pause 1000/speak Zayne \"Aquella vez, cuando éramos niños, juré que construiría un leopardo de las nieves para que te protegiera de camino a casa. Pero tú viniste, lo sopesaste en tus manos y dijiste...\"/pause 500/speak Zayne \"'¡Zayne, qué sólida te ha quedado esta bola de hielo!' $1\"/pause 500/message \"Sostiene ese 'pequeño leopardo' redondeado en la palma de su mano y te lo ofrece.\"/pause 1000/speak Zayne \"En aquel entonces me deprimí un buen rato porque elogiaste mi 'bola de hielo' en lugar de mi leopardo.\"/speak Zayne \"Ahora... ¿se parece más? Visto así, en realidad es un pequeño leopardo de las nieves, ¿verdad? $4\"/pause 1000/message \"Su sonrisa se vuelve más profunda y te mira con ternura.\"/pause 1000/message \"Exhala suavemente y una bruma blanca se dispersa en el aire frío. Entonces, levanta la mano y sus dedos parecen manipular la brisa helada.\"/pause 500/speak Zayne \"Por ejemplo... un lugar como este.\"/pause 1000/message \"La nieve a vuestro alrededor comienza a danzar suavemente. Una capa de hielo cristalino surge del suelo sin hacer ruido, cerrándose hasta formar una enorme cúpula, como una bola de cristal, que os envuelve con ternura. El mundo exterior se vuelve borroso; solo queda el leve sonido de la nieve al chocar contra el hielo y un resplandor suave, parecido a una aurora boreal, fluyendo en el interior.\"/pause 1000/speak Zayne \"De pequeño quería protegerte con un leopardo porque pensaba que eso era ser fuerte. Pero ahora...\"/pause 500/speak Zayne \"Ahora me doy cuenta de que lo que más deseo es esto... aislarte de todo el frío y el ruido, creando un mundo tranquilo que solo nos pertenezca a nosotros.\"/pause 1000/message \"El brillo de los cristales de hielo se refleja en sus ojos, bailando con una luz tenue.\"/pause 1000/speak Zayne \"Así que... ¿podría ser yo? De ahora en adelante, ser siempre esa persona... que cree un mundo de paz para ti. $4\"/pause 1000/message \"En este espacio de absoluto silencio, su voz suena inusualmente clara, con un ligero matiz de ronquera por los nervios.\"/pause 300/message \"Extiendes la mano, colocándola suavemente sobre su mano algo fría, y asientes con una sonrisa: 'Este mundo me gusta mucho... incluyendo a la persona que lo creó'.\"/message \"Bajo la quietud de esa cúpula de hielo, Zayne te mira con fijeza, con ternura y determinación.\"/pause 500/speak Zayne \"... Sí. $1\"/pause 500/message \"La mano de Zayne tiembla ligeramente y de inmediato rodea la tuya, sujetándola con una fuerza suave pero firme. El brillo cauteloso de sus ojos se intensifica de golpe, como la aurora sobre el hielo, convirtiéndose en una galaxia resplandeciente.\"/pause 500/emote Zayne 20/pause 1000/speak Zayne \"Gracias... gracias por querer quedarte en mi mundo. $1\"/pause 1000/message \"Te envuelve suavemente en sus brazos, apoyando la barbilla en tu cabello, con una voz que denota alivio y una profunda satisfacción.\"/pause 1000/emote farmer 20/pause 1500/message \"La barrera de cristales de hielo parece reaccionar a sus emociones: la luz se vuelve más cálida y pequeños cristales bailan a vuestro alrededor como duendes alegres. Este silencioso mundo de nieve se llena de una alegría y un calor indescriptibles.\"/pause 500/speak Zayne \"Deberíamos volver. Mañana... ¿podré ir a buscarte de nuevo? $4\"/setDating Zayne true/end"  
+   }
+},//8心
+{
+  "Action": "EditData",
+  "Target": "Data/Events/FarmHouse",
+  "Entries": {
+    "99550009/t 1900 2400/f Zayne 2250/D Zayne": "continue/8 10/message \"(La habitación está impregnada del aroma del té de jazmín y libros antiguos. Acabáis de terminar de probar unos postres nuevos mientras fuera empieza a caer una lluvia ligera, trayendo un poco de frescor a la noche de verano.)\"/skippable/pause 1000/pause 1000/speak Zayne \"(Deja sus notas y te mira con dulzura) No parece que la lluvia vaya a parar pronto. ¿Por qué no... tomamos otra taza de té y esperamos a que amaine?\"/pause 1000/message \"(El aire se llena de una quietud especial, más cálida y privada que de costumbre. Sentados juntos en el sofá, compartiendo una manta fina, estáis tan cerca que puedes sentir el calor de su cuerpo.)\"/pause 1000/pause 500/pause 1000/speak Zayne \"(Deja la taza y se gira hacia ti; su mirada bajo la luz cálida parece volverse más profunda) Siempre he intentado usar los dulces para registrar nuestros recuerdos. Pero hay sentimientos... que ninguna receta puede expresar.\"/pause 1000/message \"(Sus dedos rozan el dorso de tu mano con una ternura vacilante, como una pluma acariciando el agua.)\"/speak Zayne \"(Con voz grave y un rastro de nerviosismo casi imperceptible) Como en este momento... lo que quiero recordar no es solo el aroma del jazmín o el sonido de la lluvia... sino tu calor junto al mío, de forma completa.\"/pause 500/message \"(Sus palabras son como un hechizo que vuelve el aire dulce y denso. Se acerca lentamente y, esta vez, el beso no es en la frente ni en el cabello, sino que se posa suavemente en tus labios, con el dulzor del té y un anhelo contenido durante mucho tiempo.)\"/pause 500/message \"(El beso comienza como un roce cuidadoso para luego volverse más profundo, lleno de entrega y de una pasión que finalmente se libera. Cuando se aparta un poco, su respiración es irregular y en sus ojos arde una llama que es solo por ti.)\"/pause 500/speak Zayne \"(Con su frente apoyada en la tuya y voz ronca) Esta noche... ¿puedes quedarte? (Sin esperar respuesta, vuelve a besarte con un anhelo más profundo, rodeando tu cintura con firmeza para atraerte hacia él.)\"/pause 500/speak Zayne \"(Te guía hacia su habitación. Es un espacio pequeño pero ordenado y acogedor, como él mismo. El sonido de la lluvia es el único testigo.)\"/pause 1000/speak Zayne \"(Te acomoda con cuidado en la cama y se arrodilla ante ti para quitarte los zapatos con una devoción absoluta. Luego se levanta, toma tu rostro entre sus manos y te besa profundamente mientras guía tus manos hacia los botones de su camisa.) Ayúdame... (Su aliento cálido roza tu oído.)\"/pause 1000/message \"(La ropa se desliza entre suspiros y besos suaves. Se recuesta a tu lado con extrema delicadeza; al contacto de vuestra piel, ambos dejáis escapar un suspiro de plenitud. Él se apoya en sus brazos para no dejar caer todo su peso sobre ti, mirándote como si fueras su universo entero.)\"/pause 500/speak Zayne \"(Sus besos recorren tu mejilla, tu cuello y tus hombros, como un devoto que deja huellas de ternura en su lugar sagrado. Sus manos recorren tu cintura con una mezcla de inexperiencia y un inmenso deseo de descubrirte.) Estás tan cálida... (Murmura escondiendo su rostro en tu cuello, con una adoración que estremece.)\"/pause 1000/message \"(Cuando se une a ti, lo hace con una lentitud casi agónica, dándote tiempo para procesar cada sensación. Te mira fijamente a los ojos, sin perder ni un detalle de tu expresión.)\"/pause 500/speak Zayne \"(Con el ceño ligeramente fruncido por el autocontrol y la voz entrecortada) ¿Estás bien?... Dímelo.\"/pause 1000/message \"(Al recibir tu respuesta, finalmente se permite entregarse por completo, con un ritmo que nace de la ternura y la necesidad. Durante todo el tiempo, no deja de susurrar tu nombre entre suspiros llenos de amor.)\"/pause 1000/message \"(Se siente como si el tiempo se detuviera mientras él te abraza con fuerza, como si fueras un tesoro perdido que acaba de recuperar.)\"/pause 500/speak Zayne \"Al fin... te siento mío por completo.^Al fin... te siento mía por completo.\"/pause 500/speak Zayne \"Eres mío... siempre lo serás.^Eres mía... siempre lo serás.\"/pause 1000/message \"(En el momento de máxima plenitud, te estrecha contra su pecho y deja escapar un suspiro profundo y cargado de amor cerca de tu oído.)\"/pause 1000/message \"(Fuera, la lluvia golpea el tejado, acompañando el calor que ha subido en la habitación. Cada caricia y cada vez que susurra tu nombre refuerza este vínculo tan íntimo.)\"/pause 1000/message \"(Zayne te mantiene rodeada con sus brazos, sin soltarte ni un segundo incluso mientras el sueño empieza a vencerlo.)\"/end newDay"
+  }
+},//9心
+{
+  "Action": "EditData",
+  "Target": "Data/Events/Woods",
+  "Entries": {
+    "99550010/f Zayne 2500/z summer fall winter/t 1200 1700/w sunny/D Zayne/B": "continue/12 18/farmer 17 16 3 Zayne 10 16 1/skippable/pause 1000/speak Zayne \"Cierra los ojos y ven conmigo. Tengo una sorpresa que quiero que veas.\"/pause 1000/move farmer -5 0 2/pause 500/faceDirection farmer 3/pause 500/globalFade 0.5/pause 1000/globalFade 1/pause 1000/message \"Zayne te toma de la mano y te guía con cuidado a través del bosque. Cuando vuelves a abrir los ojos, descubres que aquellos pocos jazmines solitarios se han convertido ahora en un pequeño campo de flores blancas y puras. La brisa trae consigo su fragancia, y las flores parecen estrellas esparcidas sobre el verde.\"/pause 1000/speak Zayne \"¿Lo recuerdas? Fue aquí donde volvimos a encontrar el punto de partida de nuestros recuerdos.\"/pause 1000/speak Zayne \"Le pedí muchos consejos a Pierre y pasé bastante tiempo aquí a escondidas... Por suerte, no me defraudaron y florecieron justo a tiempo.\"/pause 1000/message \"Se pone en pie y se gira hacia ti con una mirada de una claridad y seriedad sin precedentes. Entonces, saca de su bolsillo interior una pequeña caja de terciopelo.\"/pause 1000/speak Zayne \"No brilla tanto como un diamante, pero creo que es el testigo más adecuado para nosotros.\"/pause 500/message \"Se pone de rodillas y te mira, con una expresión tan pura como el campo de flores que lo rodea.\"/pause 1000/speak Zayne \"¿Aceptarías? ¿Aceptarías que nuestro futuro sea como este campo que cuidamos juntos; que desde aquellos primeros recuerdos, eche raíces, crezca y florezca para siempre en nuestras estaciones?\"/pause 1000/message \"Extiendes tu mano con una sonrisa llena de emoción y felicidad, diciendo suavemente: 'Acepto. Desde el inicio de nuestros recuerdos hasta el final del futuro'.\"/pause 1000/message \"Una emoción y alegría incontenibles inundan los ojos de Zayne; con manos casi temblorosas y una devoción total, desliza ese anillo único en tu dedo anular.\"/pause 1000/speak Zayne \"Gracias... Gracias por hacer que mi vida, de ahora en adelante, tenga una primavera eterna.\"/pause 1000/message \"Se levanta y toma tu rostro entre sus manos, acariciando con sus pulgares tus ojos empañados por la emoción. Sus propios ojos están algo enrojecidos, pero su sonrisa es tan brillante que podría disipar cualquier sombra.\"/pause 1000/message \"Tras decir esto, te envuelve en un abrazo profundo, cálido y estrecho, con aroma a tierra, jazmín y esa frescura que solo él tiene.\"/pause 1000/message \"En ese momento, la noche cae silenciosamente y los farolillos que colgaron juntos empiezan a brillar uno a uno. Su luz suave se mezcla con las estrellas, envolviendo el campo secreto en un aura de ensueño.\"/pause 1000/message \"Zayne se inclina ligeramente y deposita un beso lleno de respeto y promesa en tus labios.\"/pause 1500/speak Zayne \"En tres días... tendré todo preparado para nuestra boda en el pueblo. [SnowRing]\"/setEngaged Zayne false 3/end"
+  }
+},//10心
+{
+  "Action": "EditData",
+  "Target": "Data/Events/FarmHouse",
+  "Entries": {
+    "99550014/t 2200 2600/O Zayne": "continue/8 10/farmer 8 10 0 Zayne 10 10 2/skippable/pause 1000/message \"(Es de noche y fuera cae una lluvia ligera mientras las llamas crepitan en la chimenea. Zayne acaba de terminar de organizar sus notas y tú estás acurrucado en el sofá leyendo una novela, con el gato durmiendo plácidamente a tus pies.)^(Es de noche y fuera cae una lluvia ligera mientras las llamas crepitan en la chimenea. Zayne acaba de terminar de organizar sus notas y tú estás acurrucada en el sofá leyendo una novela, con el gato durmiendo plácidamente a tus pies.)\"/pause 1000/speak Zayne \"Se está haciendo tarde, deberíamos ir a descansar.\"/pause 1000/message \"(Se acerca a ti y te ofrece su mano con naturalidad. La pones sobre su palma y él te levanta con suavidad, pero no te suelta; aprovecha el impulso para atraerte hacia su pecho.)\"/pause 1000/move Zayne -2 0 2/pause 500/pause 1000/speak Zayne \"He pasado todo el día pensando en los girasoles que plantaste... Combinan muy bien con tu sonrisa. $4\"/pause 1000/message \"(Sus besos recorren tu oreja y sientes su aliento cálido. A diferencia de la urgencia del principio, este beso tiene la familiaridad y la complicidad propia de un matrimonio.)\"/pause 1500/globalFade 0.8/pause 1000/globalFade 1/pause 1000/message \"En el dormitorio solo queda encendida la luz cálida de la lámpara de noche.\"/pause 1000/message \"(Te desabrocha la ropa de estar por casa sin prisa, como quien desenvuelve un regalo que merece ser disfrutado una y otra vez. Cuando sus dedos rozan la piel de tu cintura, notas que sus manos están inusualmente calientes.)\"/pause 1000/speak Zayne \"No tengas miedo al frío... $4\"/pause 500/message \"(Sus labios se posan en tu clavícula mientras ríe por lo bajo.)\"/pause 500/speak Zayne \"Yo me encargaré de que entres en calor. $4\"/pause 1000/message \"(Su ritmo es pausado, como si quisiera grabar en vuestros cuerpos todos los recuerdos de los años que habéis vivido juntos. Se detiene un momento al acariciar tu antebrazo, donde aún queda una leve marca del sol de cuando trabajasteis juntos el verano pasado.)\"/pause 1000/speak Zayne \"Aquí... $4\"/pause 500/message \"(Presiona su palma contra esa marca del sol.)\"/pause 500/speak Zayne \"Este es el testigo de nuestra primera temporada de cosecha. $4\"/pause 1000/message \"(Cuando la emoción se vuelve incontenible, toma tu mano y la presiona contra su pecho para que sientas los latidos desbocados de su corazón. Al mirarlo, ves bajo su cabello algo húmedo que esos ojos, siempre tranquilos, ahora rebosan una tormenta de amor solo para ti.)\"/pause 1000/speak Zayne \"Dime mi nombre... $4\"/pause 1500/globalFade 0.8/pause 1000/playSound none/pause 1000/globalFade 1/pause 1000/message \"La lluvia nocturna ha cesado sin que os dierais cuenta.\"/pause 1000/message \"(La luz de la luna se filtra por las cortinas y cae sobre vuestras manos entrelazadas. Besa con ternura las huellas de humedad en tus ojos, como si fueras un jazmín cubierto de rocío.)\"/pause 1000/speak Zayne \"Mañana... $1\"/pause 500/message \"(Sus labios rozan tu nuca con una pereza llena de satisfacción.)\"/pause 500/speak Zayne \"Te prepararé peras al almíbar con nieve; les pondré mucho azúcar. $4\"/pause 1000/message \"(Mientras su respiración se vuelve más estable, sientes el roce del anillo de bodas contra tu piel. Esta noche es el reflejo de vuestra vida juntos: comenzó con la calidez de lo cotidiano y terminó en la unión perfecta de vuestras almas.)\"/pause 1500/pause 1000/end"
+  }
+},//婚后
+//动作
+{
+  "Action": "EditData",
+  "Target": "Data/animationDescriptions",
+  "When": {
+    "Spouse": "Zayne"
+  },
+  "Entries": {
+    "zayne_sleep": "51/51/51"
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/animationDescriptions",
+  "Entries": {
+    "zayne_sport": "16/16 16 17 17 17 18 18 18 19 19 19 20 20 20 21 21 21 22 22 22 23 23 23 22 22 22 21 21 21 20 20 20 19 19 19 18 18 18 17 17 17 16 16/16",
+    "zayne_bath": "24/24 24 24 24 24 24 25 25 25 25 25 25 25 25 24 24 24 24/24",
+    "zayne_xuerong":"48/48/48",
+    "zayne_shower":"32/32 32 32 32 32 32 32 32 32 32 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 32 32 32 32 32 32 32 32/32",
+    "zayne_flower":"26/26 26 26 26 26 27 27 27 27 27 27 30 30 30 30 30 30 31 31 31 31 31 31 30 30 30 30 30 30 27 27 27 27 27 27 26 26/26",
+    "zayne_sleep": "51/51/51"
+  }
+},
+//读取
+    {
+      "Action": "Load",
+      "Target": "Maps/Zayne_Spouse_Area",
+      "FromFile": "assets/Maps/SpouseRooms/Zayne_Spouse_Area.tbin"
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Zayne",
+      "FromFile": "assets/Dialogue/ZayneDialogue.json"
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogueZayne",
+      "FromFile": "assets/Dialogue/ZayneMarriageDialogue.json"
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Zayne",
+      "FromFile": "assets/Schedule/schedule1.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/schedules/Zayne",
+      "FromFile": "assets/Schedule/Schedule1.json"
+    },
+{
+    "Action": "Load",
+    "Target": "Portraits/Zayne",
+    "FromFile": "assets/Portraits/Zayne.png"
+},
+{
+    "Action": "Load",
+    "Target": "Characters/Zayne",
+    "FromFile": "assets/Sprites/Zayne.png"
+},
+{
+    "LogName": "Seasonal Portrait",
+    "Action": "EditImage",
+    "Target": "Portraits/Zayne",
+    "FromFile": "assets/Portraits/Zayne_{{Season}}.png",
+    "Update": "OnLocationChange, OnTimeChange",
+    "When": {
+        "HasFile:assets/Portraits/Zayne_{{Season}}.png": true
+    }
+},
+{
+    "LogName": "Seasonal Sprites",
+    "Action": "EditImage",
+    "Target": "Characters/Zayne",
+    "FromFile": "assets/Sprites/Zayne_{{Season}}.png",
+    "Update": "OnLocationChange, OnTimeChange",
+    "When": {
+        "HasFile:assets/Sprites/Zayne_{{Season}}.png": true
+    }
+},
+{
+    "Action": "EditImage",
+    "Target": "Portraits/Zayne",
+    "FromFile": "assets/Portraits/Zayne_Beach.png",
+    "Update": "OnLocationChange",
+    "When": {
+        "LocationName": "BathHouse_Pool, IslandSouth"
+    }
+},
+{
+    "Action": "EditImage",
+    "Target": "Characters/Zayne",
+    "FromFile": "assets/Sprites/Zayne_Beach.png",
+    "Update": "OnLocationChange",
+    "When": {
+        "LocationName": "BathHouse_Pool, IslandSouth"
+    }
+},
+{
+      "LogName": "Sprites",
+      "Action": "Load", 
+      "Target": "Characters/Zayne_Flower",
+      "FromFile": "assets/Sprites/Zayne_Flower.png"
+    },
+    {
+      "Action": "EditData", 
+      "Target": "Data/Characters",
+      "TargetField": ["Zayne", "Appearance"],
+      "Entries": {
+        "ZayneFlowerDance": {
+          "Id": "ZayneFlowerDance", 
+          "Condition": "DAY_OF_MONTH 24, SEASON Spring",
+          "Sprite": "Characters/Zayne_Flower",
+          "Portrait": "Portraits/Zayne",
+          "Indoors": true,
+          "Outdoors": true, 
+          "Precedence": -1000
+        }
+      }
+    },
+{
+    "Action": "EditImage",
+    "Target": "Portraits/Zayne",
+    "FromFile": "assets/Portraits/Zayne_Hospital.png",
+    "Update": "OnLocationChange",
+    "When": {
+        "LocationName": "Hospital"
+    }
+},
+{
+    "Action": "EditImage",
+    "Target": "Characters/Zayne",
+    "FromFile": "assets/Sprites/Zayne_Hospital.png",
+    "Update": "OnLocationChange",
+    "When": {
+        "LocationName": "Hospital"
+    }
+},
+//孩子
+    {
+      "Action": "Load",
+      "Target": "Characters/Baby",
+      "FromFile": "assets/Image/Baby.png,",
+      "When": {
+        "Relationship:Zayne": "Married",
+        "Zayne Kids": "true"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Baby_girl",
+      "FromFile": "assets/Image/Baby_girl.png,",
+      "When": {
+        "Relationship:Zayne": "Married",
+        "Zayne Kids": "true"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Toddler_girl",
+      "FromFile": "assets/Image/Toddler_girl.png,",
+      "When": {
+        "Relationship:Zayne": "Married",
+        "Zayne Kids": "true"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Toddler",
+      "FromFile": "assets/Image/Toddler.png,",
+      "When": {
+        "Relationship:Zayne": "Married",
+        "Zayne Kids": "true"
+      }
+    },
+    //节日
+    {
+  "Action": "EditData",
+  "Target": "data/festivals/spring13",
+  "Entries": {
+    "Zayne": "{{i18n:Festivals.spring13}}",
+    "Zayne_spouse": "{{i18n:Festivals.spring13_spouse}}"
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Festivals/spring13",
+  "TextOperations": [
+      {
+       "Operation": "Append",
+       "Target": [ "Entries", "Set-Up_additionalCharacters"],
+        "Value": "Zayne 17 57 2",
+        "Delimiter": "/"
+         },
+         {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "Zayne 23 65 1",
+          "Delimiter": "/"
+        }
+     ]
+ },
+{
+  "Action": "EditData",
+  "Target": "data/festivals/spring24",
+  "Entries": {
+    "Zayne": "{{i18n:Festivals.spring24}}",
+    "Zayne_spouse":  "{{i18n:Festivals.spring24_spouse}}"
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Festivals/spring24",
+  "TextOperations": [
+      {
+       "Operation": "Append",
+       "Target": [ "Entries", "Set-Up_additionalCharacters"],
+        "Value": "Zayne 17 20 2",
+        "Delimiter": "/"
+         },
+         {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "Zayne 13 31 0",
+          "Delimiter": "/"
+        }
+     ]
+ },
+{
+      "Action": "EditData",
+      "Target": "data/festivals/summer11",
+      "Entries": {
+        "Zayne": "{{i18n:Festivals.summer11}}",
+        "Zayne_spouse": "{{i18n:Festivals.summer11_spouse}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "TextOperations": [
+          {
+           "Operation": "Append",
+           "Target": [ "Entries", "Set-Up_additionalCharacters"],
+            "Value": "Zayne 31 19 2",
+            "Delimiter": "/"
+             },
+             {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "Zayne 31 19 0",
+          "Delimiter": "/"
+        }
+         ]
+     },
+{
+      "Action": "EditData",
+      "Target": "data/festivals/summer28",
+      "Entries": {
+        "Zayne": "{{i18n:Festivals.summer28}}",
+        "Zayne_spouse": "{{i18n:Festivals.summer28_spouse}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "TextOperations": [
+          {
+           "Operation": "Append",
+           "Target": [ "Entries", "Set-Up_additionalCharacters"],
+            "Value": "Zayne 25 36 2",
+            "Delimiter": "/"
+             },
+             {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "Zayne 29 36 2",
+          "Delimiter": "/"
+        }
+         ]
+     },
+{
+      "Action": "EditData",
+      "Target": "data/festivals/fall16",
+      "Entries": {
+        "Zayne": "{{i18n:Festivals.fall16}}",
+        "Zayne_spouse": "{{i18n:Festivals.fall16_spouse}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "TextOperations": [
+          {
+           "Operation": "Append",
+           "Target": [ "Entries", "Set-Up_additionalCharacters"],
+            "Value": "Zayne 17 57 2",
+            "Delimiter": "/"
+             },
+             {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "Zayne 17 57 2",
+          "Delimiter": "/"
+        }
+         ]
+     },
+{
+      "Action": "EditData",
+      "Target": "data/festivals/fall27",
+      "Entries": {
+        "Zayne": "{{i18n:Festivals.fall27}}",
+        "Zayne_spouse": "{{i18n:Festivals.fall27_spouse}}"
+         }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "TextOperations": [
+          {
+           "Operation": "Append",
+           "Target": [ "Entries", "Set-Up_additionalCharacters"],
+            "Value": "Zayne 23 53 2",
+            "Delimiter": "/"
+             },
+             {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "Zayne 22 53 2",
+          "Delimiter": "/"
+        }
+         ]
+     },
+{
+      "Action": "EditData",
+      "Target": "data/festivals/winter8",
+      "Entries": {
+        "Zayne": "{{i18n:Festivals.winter8}}",
+        "Zayne_spouse": "{{i18n:Festivals.winter8_spouse}}"
+         }
+    },
+    {
+  "Action": "EditData",
+  "Target": "Data/Festivals/winter8",
+  "TextOperations": [
+      {
+       "Operation": "Append",
+       "Target": [ "Entries", "Set-Up_additionalCharacters"],
+        "Value": "Zayne 71 17 2",
+        "Delimiter": "/"
+         },
+             {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "Zayne 71 17 2",
+          "Delimiter": "/"
+        }
+     ]
+ },
+{
+      "Action": "EditData",
+      "Target": "data/festivals/winter25",
+      "Entries": {
+        "Zayne": "{{i18n:Festivals.winter25}}",
+        "Zayne_spouse": "{{i18n:Festivals.winter25_spouse}}"
+         }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "TextOperations": [
+          {
+           "Operation": "Append",
+           "Target": [ "Entries", "Set-Up_additionalCharacters"],
+            "Value": "Zayne 23 62 2",
+            "Delimiter": "/"
+             },
+             {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters"],
+          "Value": "Zayne 23 62 2",
+          "Delimiter": "/"
+        }
+         ]
+     },
+     {
+  "Action": "EditData",
+  "Target": "data/festivals/spring13",
+  "Entries": {
+    "Zayne": "{{i18n:Festivals.spring13}}",
+    "Zayne_spouse": "{{i18n:Festivals.spring13_spouse}}"
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Festivals/spring13",
+  "TextOperations": [
+      {
+       "Operation": "Append",
+       "Target": [ "Entries", "Set-Up_additionalCharacters_y2"],
+        "Value": "Zayne 17 57 2",
+        "Delimiter": "/"
+         },
+         {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+          "Value": "Zayne 24 62 2",
+          "Delimiter": "/"
+        }
+     ]
+ },
+{
+  "Action": "EditData",
+  "Target": "data/festivals/spring24",
+  "Entries": {
+    "Zayne": "{{i18n:Festivals.spring24}}",
+    "Zayne_spouse":  "{{i18n:Festivals.spring24_spouse}}"
+  }
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Festivals/spring24",
+  "TextOperations": [
+      {
+       "Operation": "Append",
+       "Target": [ "Entries", "Set-Up_additionalCharacters_y2"],
+        "Value": "Zayne 15 20 2",
+        "Delimiter": "/"
+         },
+         {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+          "Value": "Zayne 13 31 0",
+          "Delimiter": "/"
+        }
+     ]
+ },
+{
+      "Action": "EditData",
+      "Target": "data/festivals/summer11",
+      "Entries": {
+        "Zayne": "{{i18n:Festivals.summer11}}",
+        "Zayne_spouse": "{{i18n:Festivals.summer11_spouse}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "TextOperations": [
+          {
+           "Operation": "Append",
+           "Target": [ "Entries", "Set-Up_additionalCharacters_y2"],
+            "Value": "Zayne 31 19 2",
+            "Delimiter": "/"
+             },
+             {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+          "Value": "Zayne 23 18 0",
+          "Delimiter": "/"
+        }
+         ]
+     },
+{
+      "Action": "EditData",
+      "Target": "data/festivals/summer28",
+      "Entries": {
+        "Zayne": "{{i18n:Festivals.summer28}}",
+        "Zayne_spouse": "{{i18n:Festivals.summer28_spouse}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "TextOperations": [
+          {
+           "Operation": "Append",
+           "Target": [ "Entries", "Set-Up_additionalCharacters_y2"],
+            "Value": "Zayne 25 36 2",
+            "Delimiter": "/"
+             },
+             {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+          "Value": "Zayne 29 36 2",
+          "Delimiter": "/"
+        }
+         ]
+     },
+{
+      "Action": "EditData",
+      "Target": "data/festivals/fall16",
+      "Entries": {
+        "Zayne": "{{i18n:Festivals.fall16}}",
+        "Zayne_spouse": "{{i18n:Festivals.fall16_spouse}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "TextOperations": [
+          {
+           "Operation": "Append",
+           "Target": [ "Entries", "Set-Up_additionalCharacters_y2"],
+            "Value": "Zayne 17 57 2",
+            "Delimiter": "/"
+             },
+             {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+          "Value": "Zayne 17 57 2",
+          "Delimiter": "/"
+        }
+         ]
+     },
+{
+      "Action": "EditData",
+      "Target": "data/festivals/fall27",
+      "Entries": {
+        "Zayne": "{{i18n:Festivals.fall27}}",
+        "Zayne_spouse": "{{i18n:Festivals.fall27_spouse}}"
+         }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "TextOperations": [
+          {
+           "Operation": "Append",
+           "Target": [ "Entries", "Set-Up_additionalCharacters_y2"],
+            "Value": "Zayne 23 53 2",
+            "Delimiter": "/"
+             },
+             {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+          "Value": "Zayne 22 53 2",
+          "Delimiter": "/"
+        }
+         ]
+     },
+{
+      "Action": "EditData",
+      "Target": "data/festivals/winter8",
+      "Entries": {
+        "Zayne": "{{i18n:Festivals.winter8}}",
+        "Zayne_spouse": "{{i18n:Festivals.winter8_spouse}}"
+         }
+    },
+    {
+  "Action": "EditData",
+  "Target": "Data/Festivals/winter8",
+  "TextOperations": [
+      {
+       "Operation": "Append",
+       "Target": [ "Entries", "Set-Up_additionalCharacters_y2"],
+        "Value": "Zayne 68 19 2",
+        "Delimiter": "/"
+         },
+             {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+          "Value": "Zayne 65 32 1",
+          "Delimiter": "/"
+        }
+     ]
+ },
+{
+      "Action": "EditData",
+      "Target": "data/festivals/winter25",
+      "Entries": {
+        "Zayne": "{{i18n:Festivals.winter25}}",
+        "Zayne_spouse": "{{i18n:Festivals.winter25_spouse}}"
+         }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "TextOperations": [
+          {
+           "Operation": "Append",
+           "Target": [ "Entries", "Set-Up_additionalCharacters_y2"],
+            "Value": "Zayne 28 61 2",
+            "Delimiter": "/"
+             },
+             {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+          "Value": "Zayne 23 62 2",
+          "Delimiter": "/"
+        }
+         ]
+     },//节日站位
+     {
+  "LogName": "Load Object",
+  "Action": "Load",
+  "Target": "Mods/Zayne/Objects/Item",
+  "FromFile": "assets/Image/GoldBriefs.png"
+},
+{
+  "Action": "EditData",
+  "Target": "Data/Objects",
+  "Entries": {
+    "GoldBriefs": {
+      "Name": "GoldBriefs",
+      "DisplayName": "{{i18n:Zayne.GoldBriefs.DisplayName}}",
+      "Description": "{{i18n:Zayne.GoldBriefs.Description}}",
+      "Type": "Basic",
+      "Category": 0,
+      "Price": 500,
+      "Texture": "Mods/Zayne/Objects/Item",
+      "SpriteIndex": 0,
+      "Edibility": -300,
+      "ContextTags": [
+        "color_gold"
+      ]
+    }
+  }
+},
+{
+  "Action": "EditMap",
+  "Target": "Maps/BusStop",
+  "TextOperations": [
+    {
+      "Operation": "Append",
+      "Target": [
+        "MapProperties",
+        "Warp"
+      ],
+      "Value": "43 7 Custom_ZayneMap 1 23",
+      "Delimiter": " "
+    }
+  ]
+},//新地图传送
+{
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "ZayneShop": {
+          "Owners": [
+                    { 
+                        "Name": "AnyOrNone"
+                    }
+                    ],
+          "Items": [
+            {
+              "Id": "(O)Caramel Egg Tart",
+              "ItemId": "Caramel Egg Tart",
+              "Price": 520,
+              "Condition": "",
+              "AvailableStock": 5,
+              "Priority": 1
+            },
+            {
+              "Id": "(O)Cheesecake",
+              "ItemId": "Cheesecake",
+              "Price": 520,
+              "Condition": "",
+              "AvailableStock": 5,
+              "Priority": 2
+            },
+            {
+              "Id": "(O)Maple Syrup Croissant",
+              "ItemId": "Maple Syrup Croissant",
+              "Price": 520,
+              "Condition": "",
+              "AvailableStock": 5,
+              "Priority": 3
+            },
+            {
+              "Id": "(O)Molten Chocolate Cake",
+              "ItemId": "Molten Chocolate Cake",
+              "Price": 520,
+              "Condition": "",
+              "AvailableStock": 5,
+              "Priority": 4
+            },
+            {
+              "Id": "(O)Sea Salt Ice Bok Roll",
+              "ItemId": "Sea Salt Ice Bok Roll",
+              "Price": 520,
+              "Condition": "",
+              "AvailableStock": 5,
+              "Priority": 5
+            },
+            {
+              "Id": "(O)Snow Kiss Chocolate",
+              "ItemId": "Snow Kiss Chocolate",
+              "Price": 520,
+              "Condition": "",
+              "AvailableStock": 5,
+              "Priority": 6
+            },
+            {
+              "Id": "(O)Strawberry Macaron",
+              "ItemId": "Strawberry Macaron",
+              "Price": 520,
+              "Condition": "",
+              "AvailableStock": 5,
+              "Priority": 7
+            },
+            {
+              "Id": "(O)Taro Paste Cake",
+              "ItemId": "Taro Paste Cake",
+              "Price": 520,
+              "Condition": "",
+              "AvailableStock": 5,
+              "Priority": 8
+            },
+            {
+              "Id": "(O)Taro Paste Ice Cream",
+              "ItemId": "Taro Paste Ice Cream",
+              "Price": 520,
+              "Condition": "",
+              "AvailableStock": 5,
+              "Priority": 9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Town",
+      "FromFile": "assets/Maps/ZayneShop.tbin",
+      "ToArea": {
+        "X": 8,
+        "Y": 64,
+        "Width": 8,
+        "Height": 6
+      }
+    },
+    //商店测试
+{
+    "Action": "Load",
+    "Target": "Mods/Zayne/SnowRing",
+    "FromFile": "assets/Image/SnowRing.png"
+},
+{
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": {
+        "SnowRing": {
+            "Name": "SnowRing",
+            "DisplayName": "{{i18n:Zayne.SnowRing.DisplayName}}",
+            "Description": "{{i18n:Zayne.SnowRing.Description}}",
+            "Type": "Ring",
+            "Category": -96,
+            "Price": 1500,
+            "Texture": "Mods/Zayne/SnowRing",
+            "SpriteIndex": 0,
+            "Edibility": -300,
+            "Duration": -2,
+            "LuckLevel": 2,
+            "Speed": 2,
+            "Defense": 2,
+            "Attack": 2
+        }
+    }
+},
+{
+    "Action": "Load",
+    "Target": "Mods/Zayne/IceRing",
+    "FromFile": "assets/Image/IceRing.png"
+},
+{
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": {
+        "IceRing": {
+            "Name": "IceRing",
+            "DisplayName": "{{i18n:Zayne.IceRing.DisplayName}}",
+            "Description": "{{i18n:Zayne.IceRing.Description}}",
+            "Type": "Ring",
+            "Category": -96,
+            "Price": 1500,
+            "Texture": "Mods/Zayne/IceRing",
+            "SpriteIndex": 0,
+            "Edibility": -300
+        }
+    }
+},
+{
+    "Action": "EditData",
+    "Target": "Data/Rings",
+    "Entries": {
+        "IceRing": "10 0 0 0 0 0 0 0 0 0 0 0"
+    }
+},//戒指
+{
+      "LogName": "Load Object",
+      "Action": "Load",
+      "Target": "Mods\\Zayne\\Objects\\Weapons",
+      "FromFile": "assets/Image/Sanctus.png"
+  },
+  {
+    "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "Sanctus": {
+          "Name": "Sanctus",
+          "DisplayName": "{{i18n:Zayne.Sanctus.DisplayName}}",
+          "Description": "{{i18n:Zayne.Sanctus.Description}}",
+          "MinDamage": 100,
+          "MaxDamage": 210,
+          "Knockback": 4.0,
+          "Speed": 1,
+          "Precision": 80,
+          "Defense": 10,
+          "Type": 2,
+          "AreaOfEffect": 2,
+          "CritChance": 0.5,
+          "CritMultiplier": 1.0,
+          "CanBeLostOnDeath": true,
+          "Texture": "Mods\\Zayne\\Objects\\Weapons",
+          "SpriteIndex": 0
+      }
+      }
+},//武器（永恒圣音）
+{
+  "Action": "Load",
+  "Target": "Mods\\Zayne\\letterBG_Zayne",
+  "FromFile": "assets/Image/ZayneLetter.png"
+},
+{
+    "Action": "EditData",
+    "Target": "Data/Events/Farm",
+    "Entries": {
+    "951095/O Zayne/e 99550001 99550002 99550004 99550006 99550008 99550010 99550014/Skill Combat 10/x ZayneSanctusMail": "null",
+    "959500/j 1/x ZayneFirstMail":"null",
+    "951001/e 99550001/x ZayneGlassPearMail": "null",
+    "951100/e 99550001/x ZayneIntordactionMail": "null",
+    "951101/f Zayne 250/x Zayne1Mail":"null",
+    "951122/f Zayne 500/w sunny/x Zayne02Mail":"null",
+    "951008/f Zayne 2000/Season winter/x ZayneSnowyMail": "null",
+    "951002/e 99550002/x ZayneJasmineMail": "null",
+    "951009/f Zayne 2250/D Zayne/Season summer/x ZayneFirstLoveMail": "null",
+    "951103/f Zayne 750/x Zayne3Mail":"null",
+    "951105/f Zayne 1250/x Zayne5Mail":"null",
+    "951107/f Zayne 1750/x Zayne7Mail":"null",
+    "951006/e 99550006/x ZayneHappyTomatoMail": "null",
+    "951109/f Zayne 2500/D Zayne/x ZayneHouseMail": "null",
+    "951209/f Zayne 2500/D Zayne/n ZayneHouseMail/x ZayneHousesMail": "null",
+    "959999/O Zayne/x ZayneFamilyMail": "null",
+    "959911/O Zayne/x ZayneGuanYuanMail": "null",
+    "959911/O Zayne/x ZayneLiuBingMail": "null",
+    "959911/O Zayne/x ZaynePaintingMail": "null",
+    "959955/O Zayne/i IceRing/x ZayneAksoMail": "null",
+    "959977/O Zayne/x ZayneJasmineMacaronMail": "null"
+    }
+  },
+{
+    "Action": "EditData",
+    "Target": "Data/Mail",
+    "Entries": {
+        "ZayneSanctusMail": "{{i18n: Mail.ZayneSanctusMail}}",
+        "ZayneFirstMail": "{{i18n: Mail.ZayneFirstMail}}",
+        "ZayneGlassPearMail": "{{i18n: Mail.ZayneGlassPearMail}}",
+        "ZayneIntordactionMail": "{{i18n: Mail.ZayneIntordactionMail}}",
+        "Zayne02Mail":"{{i18n:Mail.Zayne02Mail}}",
+        "ZayneJasmineMail": "{{i18n: Mail.ZayneJasmineMail}}",
+        "Zayne1Mail": "{{i18n: Mail.Zayne1Mail}}",
+        "ZayneSnowyMail": "{{i18n: Mail.ZayneSnowyMail}}",
+        "Zayne3Mail": "{{i18n: Mail.Zayne3Mail}}",
+        "ZayneFirstLoveMail":"{{i18n: Mail.ZayneFirstLoveMail}}",
+        "Zayne5Mail": "{{i18n: Mail.Zayne5Mail}}",
+        "Zayne7Mail": "{{i18n: Mail.Zayne7Mail}}",
+        "ZayneHappyTomatoMail": "{{i18n: Mail.ZayneHappyTomatoMail}}",
+        "ZayneHouseMail": "{{i18n: Mail.ZayneHouseMail}}",
+        "ZayneHousesMail": "{{i18n: Mail.ZayneHousesMail}}",
+        "ZayneFamilyMail": "{{i18n: Mail.ZayneFamilyMail}}",
+        "ZayneGuanYuanMail": "{{i18n: Mail.ZayneGuanYuanMail}}",
+        "ZayneLiuBingMail": "{{i18n: Mail.ZayneLiuBingMail}}",
+        "ZaynePaintingMail": "{{i18n: Mail.ZaynePaintingMail}}",
+        "ZayneAksoMail": "{{i18n: Mail.ZayneAksoMail}}",
+        "ZayneJasmineMacaronMail": "{{i18n: Mail.ZayneJasmineMacaronMail}}",
+        "Zayne_Macaron_recipe": "{{i18n:Zayne_Macaron_recipe.text}} %item cookingRecipe Macaron %%[letterbg Mods\\Zayne\\letterBG_Zayne 0][#]{{i18n:Zayne_Macaron_recipe.name}}"
+    }
+  },
+{
+  "Action": "EditData",
+  "Target": "Data/TriggerActions",
+  "Entries": {
+    "Zayne_MacaronMail": {
+      "Id": "Zayne_MacaronMail",
+      "Trigger": "DayEnding",
+      "Condition": "PLAYER_HAS_SEEN_EVENT Current 99550004",
+      "Action": "AddMail Current Zayne_Macaron_recipe tomorrow"
+    }
+  }
+}
+  ]
+}
